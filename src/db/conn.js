@@ -7,8 +7,7 @@ mongoose.Promise = global.Promise;
 const dotenv= require('dotenv')
 dotenv.config();
 
-const atlas_uri = process.env.ATLAS_URI
-console.log(process.env.ATLAS_URI)
+const atlas_uri = process.env.ATLAS_URI || "mongodb://localhost:27017/store"
 
 
 

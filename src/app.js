@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const connect = require('./db/conn');
-const port = 3000;
+const port = process.env.PORT || 3000;
 const ProductModel = require('./db/models/model');
 const productRouter = require('./routers/router')
 
